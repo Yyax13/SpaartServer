@@ -22,7 +22,7 @@ port_choose = input(f"""
     {hashtag} {c.cyan('Choose one')}: """)
 
 if port_choose == "1":
-    port = random.randint(1024, 80000)
+    port = random.randint(10024, 80000)
 elif port_choose == "2":
     port = int(input(f'    {hashtag} {c.cyan("Choose a port (more than 1024): ")}'))
     if port <= 1024:
